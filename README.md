@@ -25,10 +25,11 @@ This commands includes
 <BR>
 • Other IP Commands e.g. show ip route etc.
 <BR>
-## Program
-#client.py
-    
-    import socket
+
+## PROGRAM
+### client.py
+```
+import socket
     client = socket.socket()
     host = socket.gethostname()
     port = 9999
@@ -46,9 +47,8 @@ This commands includes
         data = client.recv(4096).decode()
         print(f"\n--- Output ---\n{data}\n")
     client.close()
-
-
-#server.py
+```
+### server.py
 ```
 import socket
 import subprocess
